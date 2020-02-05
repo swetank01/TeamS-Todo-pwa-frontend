@@ -5,11 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="sytle.css" rel="text/css">
-    <title>basic-pwa</title>
+    <title>basic-todo</title>
 </head>
 <body onload="getapidata()">
-    Make a Todo Here 
-    <h2 id="demo"></h2>
+    <header>
+        <h1>TeamS Todo</h1>
+    </header>
+
+    <main>
+        <form id="myForm" onsubmit="getapidata()">
+            <input type="text" name="task_name" placeholder="Enter task label here">
+            <input type="button" onclick="postdata()" value="send data">
+        </form>
+    </main>
+
+    
+    <blockquote>
+        TODO LIST
+    </blockquote>
+    
+    <h3 id="dataShow"></h3>
+
 </body>
 <script src="api.js"></script>
+
+
 </html>
